@@ -1,0 +1,72 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--green);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  min-height: 150px;
+}
+
+.bottomLeftLeaf {
+  position: absolute;
+  width: 100px;
+  left: -12%;
+  bottom: -25%;
+  rotate: 20deg;
+}
+
+.bottomRightLeaf {
+  position: absolute;
+  width: 200px;
+  right: -25%;
+  bottom: -60%;
+  rotate: -10deg;
+}
+
+.bottomRightLeaf2 {
+  position: absolute;
+  width: 100px;
+  right: -15%;
+  bottom: -20%;
+  rotate: -70deg;
+}
+
+.topLeftLeaf {
+  position: absolute;
+  width: 150px;
+  left: -20%;
+  top: -30%;
+  rotate: 120deg;
+}
+
+.topLeftLeaf2 {
+  position: absolute;
+  width: 100px;
+  left: -10%;
+  top: -30%;
+  rotate: 120deg;
+}
+
+.topRightLeaf {
+  position: absolute;
+  width: 150px;
+  right: -20%;
+  top: -30%;
+  rotate: 120deg;
+}
+
+.topRightLeaf2 {
+  position: absolute;
+  width: 150px;
+  right: -20%;
+  top: -35%;
+  rotate: 230deg;
+}

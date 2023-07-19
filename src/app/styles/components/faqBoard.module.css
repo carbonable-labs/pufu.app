@@ -1,0 +1,96 @@
+.container {
+  background-color: var(--background-light);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title,
+.faqTitle {
+  color: var(--secondary);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid var(--secondary);
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  color: white !important;
+  max-width: 24px !important;
+  font-size: 10px;
+}
+
+.labelBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.faqHeader {
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.faqButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid var(--secondary);
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  color: white !important;
+  max-width: 24px !important;
+  font-size: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .button {
+    display: none;
+  }
+
+  .labelBox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .faqHeader {
+    display: flex;
+  }
+
+  .title {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    display: none;
+  }
+
+  .labelBox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .faqHeader {
+    display: flex;
+  }
+
+  .title {
+    display: none;
+  }
+}

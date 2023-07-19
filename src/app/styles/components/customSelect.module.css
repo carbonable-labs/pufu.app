@@ -1,0 +1,19 @@
+.select {
+  border: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: var(--background-light);
+  width: 170px;
+  color: var(--secondary);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .select {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .select {
+    margin-top: 20px;
+  }
+}

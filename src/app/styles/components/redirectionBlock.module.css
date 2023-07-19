@@ -1,0 +1,82 @@
+.primary {
+  background-color: var(--green);
+}
+
+.secondary {
+  background-color: var(--blue);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  min-height: 340px;
+}
+
+.bottomLeftLeaf {
+  position: absolute;
+  width: 250px;
+  left: -20%;
+  bottom: -50%;
+}
+
+.bottomRightLeaf {
+  position: absolute;
+  width: 300px;
+  right: -20%;
+  bottom: -40%;
+}
+
+.bottomRightLeaf2 {
+  position: absolute;
+  width: 150px;
+  right: -8%;
+  bottom: -60%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bottomLeftLeaf {
+    width: 200px;
+    left: -10%;
+    bottom: -50%;
+  }
+
+  .bottomRightLeaf {
+    position: absolute;
+    width: 300px;
+    right: -20%;
+    bottom: -40%;
+  }
+
+  .bottomRightLeaf2 {
+    position: absolute;
+    width: 150px;
+    right: -8%;
+    bottom: -60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bottomLeftLeaf {
+    position: absolute;
+    width: 250px;
+    left: -30%;
+    bottom: -40%;
+  }
+
+  .bottomRightLeaf {
+    right: -35%;
+    bottom: -30%;
+  }
+
+  .bottomRightLeaf2 {
+    right: -20%;
+    bottom: -50%;
+  }
+}

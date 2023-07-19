@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "QuickZap";
+    src: url(../public/fonts/quickzap.ttf);
+  }
+  @font-face {
+    font-family: "Poppins-Regular";
+    src: url(../public/fonts/poppins/Poppins-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Poppins-Bold";
+    src: url(../public/fonts/poppins/Poppins-Bold.ttf);
+  }
+}
+
+:root {
+  --primary: #19aa6e;
+  --primary300: #dcf2e9;
+  --secondary: #402d28;
+  --secondary300: #eae0d5;
+  --tertiary: #bf9e7b;
+  --background: #fff9f0;
+  --nimiq-ease: cubic-bezier(0.25, 0, 0, 1);
+  --background-light: #fffcf8;
+  --secondary-500: #968b88;
+  --blue: #2b2840;
+  --green: #284028;
+  --red: #d21313;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins-Regular";
+  background-color: var(--background);
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title {
+  font-family: "QuickZap";
+  font-size: 2.5rem;
+  color: var(--primary);
+  text-shadow: 1px 1px var(--tertiary);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Scroll bar */
+
+/* width */
+/* ::-webkit-scrollbar {
+  width: 10px;
+} */
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #19aa6e50;
+  border-radius: 10px;
+}
+
+/* ---------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+.firstLeavesGroup {
+  position: fixed;
+  width: 300px;
+  z-index: -1000;
+  bottom: -20%;
+  left: -100px;
+  overflow: hidden;
+}
+
+.secondLeavesGroup {
+  position: fixed;
+  bottom: -20%;
+  right: -80px;
+  width: 180px;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+strong {
+  font-family: "Poppins-Bold";
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: var(--secondary);
+    background: var(--background);
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .firstLeavesGroup {
+    visibility: hidden;
+  }
+
+  .secondLeavesGroup {
+    visibility: hidden;
+  }
+}
+
+h1 {
+  font-family: "QuickZap";
+  font-size: 48px;
+  font-style: bold;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h2 {
+  font-family: "QuickZap";
+  font-size: 36px;
+  font-style: bold;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h3 {
+  font-family: "QuickZap";
+  font-size: 30px;
+  font-style: bold;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h4 {
+  font-family: "QuickZap";
+  font-size: 24px;
+  font-style: bold;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text-normal {
+  font-family: "Poppins-Regular";
+  font-size: 20px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text-medium {
+  font-family: "Poppins-Regular";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text-default {
+  font-family: "Poppins-Regular";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text-small {
+  font-family: "Poppins-Regular";
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text-micro {
+  font-family: "Poppins-Regular";
+  font-size: 12px;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text-bold {
+  font-family: "Poppins-Bold";
+}

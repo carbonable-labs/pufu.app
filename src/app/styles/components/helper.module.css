@@ -1,0 +1,36 @@
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}
