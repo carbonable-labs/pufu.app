@@ -2,10 +2,10 @@ import Decompose from "./components/decompose";
 import Navbar from "./components/navbar";
 import { StarknetConfig, InjectedConnector } from '@starknet-react/core'
 
-// const connectors = [
-//   new InjectedConnector({ options: { id: 'braavos' }}),
-//   new InjectedConnector({ options: { id: 'argentX' }}),
-// ]
+const connectors = [
+  new InjectedConnector({ options: { id: 'braavos' }}),
+  new InjectedConnector({ options: { id: 'argentX' }}),
+]
 export default function Home() {
   return (
     
